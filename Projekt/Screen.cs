@@ -29,6 +29,7 @@ namespace Projekt
                 Console.Write(s);
                 if (i == lastZeilenSprung + 75 || s == "." || s == "!" || i == scene.getText().Length )
                 { Console.WriteLine(""); lastZeilenSprung = i; }
+                System.Threading.Thread.Sleep(10);
             }
 
             Console.WriteLine("Optionen:");
