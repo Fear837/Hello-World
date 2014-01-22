@@ -14,6 +14,32 @@ namespace Projekt
 
             Console.WriteLine("Hallo Welt!");
             Console.ReadLine();
+
+            start();
+        }
+
+        static private void start()
+        {
+            Console.WriteLine("");
+
+            Screen screen = new Screen(getScene());
+            screen.show(true);
+        }
+
+        static Scene getScene()
+        {
+            String text = "Das ist ein standard Text, der nur für Testzwecke geeignet ist!";
+            text += "Dieser Text sollte außerdem ziemlich lang sein, damit die Zeilenabschnitte getestet werden!";
+
+            List<Option> options = new List<Option>();
+
+            options.Add( new Option("Option A", null) );
+            options.Add( new Option("Option B", null) );
+            options.Add( new Option("Option C", null) );
+
+            Scene scene = new Scene(text, options);
+
+            return scene;
         }
     }
 }
