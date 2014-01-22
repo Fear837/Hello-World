@@ -10,6 +10,8 @@ namespace Projekt
     {
         static void Main(string[] args)
         {
+            Console.Title = "Hallo Welt Programm!";
+
             Console.WriteLine("Hallo Welt!");
             Console.ReadLine();
         }
