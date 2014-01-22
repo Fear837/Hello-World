@@ -27,7 +27,7 @@ namespace Projekt
                 String s = scene.getText().Substring(i, 1);
 
                 Console.Write(s);
-                if (i == lastZeilenSprung + 75 || s == "." || s == "!" || i == scene.getText().Length)
+                if (i == lastZeilenSprung + 75 || s == "." || s == "!" || i == scene.getText().Length )
                 { Console.WriteLine(""); lastZeilenSprung = i; }
             }
 
