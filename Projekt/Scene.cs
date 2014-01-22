@@ -22,7 +22,7 @@ namespace Projekt
         public String getText()
         { return Text; }
 
-        public Option getOption(Int32 Index)
+        public Option getOptionAtIndex(Int32 Index)
         { return Options.ElementAt(Index); }
 
         public List<Option> getOptions()
