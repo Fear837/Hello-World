@@ -27,11 +27,10 @@ namespace Projekt
                 String s = scene.getText().Substring(i, 1);
 
                 Console.Write(s);
-                if (i == lastZeilenSprung + 75 || s == "." || s == "!")
+                if (i == lastZeilenSprung + 75 || s == "." || s == "!" || i == scene.getText().Length)
                 { Console.WriteLine(""); lastZeilenSprung = i; }
             }
 
-            Console.WriteLine("");
             Console.WriteLine("Optionen:");
 
             foreach (Option item in scene.getOptions())
