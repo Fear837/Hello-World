@@ -8,7 +8,7 @@ namespace Projekt
 {
     class Inventory
     {
-        public List<Item> Items { get; }
+        public List<Item> Items = new List<Item>();
 
         public Int32 MaxSlots { get; set; }
 
