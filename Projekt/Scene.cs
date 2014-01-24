@@ -13,10 +13,13 @@ namespace Projekt
 
         private List<Option> Options;
 
-        public Scene(String Text, List<Option> Options)
+        public Inventory inventory { get; set; }
+
+        public Scene(String Text, List<Option> Options, Inventory inventory)
         {
             this.Text = Text;
             this.Options = Options;
+            this.inventory = inventory;
         }
 
         public String getText()
