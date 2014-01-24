@@ -14,9 +14,8 @@ namespace Projekt
 
         private Scene scene;
 
-        public Inventory(Scene scene, Int32 MaxSlots) // Todo: Inventar-Klasse
+        public Inventory(Int32 MaxSlots) // Todo: Inventar-Klasse
         {
-            this.scene = scene;
             this.MaxSlots = MaxSlots;
         }
 
