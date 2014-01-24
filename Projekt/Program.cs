@@ -41,7 +41,7 @@ namespace Projekt
             inventory.addItem(new Item("Item1", "Typ1", "Extra1"));
             inventory.addItem(new Item("Item2", "Typ2", "Extra2"));
 
-            Scene scene = new Scene(text, options, inventory);
+            Scene scene = new Scene("SceneName", 1, text, options, inventory);
 
             return scene;
         }
