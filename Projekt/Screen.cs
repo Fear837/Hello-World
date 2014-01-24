@@ -32,11 +32,22 @@ namespace Projekt
                 System.Threading.Thread.Sleep(10);
             }
 
+            Console.WriteLine("");
             Console.WriteLine("Optionen:");
 
             foreach (Option item in scene.getOptions())
             {
                 Console.WriteLine(item.getTitle());
+                System.Threading.Thread.Sleep(10);
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Inventar:");
+
+            foreach (Item item in scene.inventory.Items)
+            {
+                Console.WriteLine("> " + item.Itemname + " | " + item.Itemtype + " | " + item.Extra + " | (" + item.getItemid() + ")");
+                System.Threading.Thread.Sleep(10);
             }
 
             Console.ReadLine();
