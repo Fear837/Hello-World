@@ -37,7 +37,11 @@ namespace Projekt
             options.Add( new Option("Option B", null) );
             options.Add( new Option("Option C", null) );
 
-            Scene scene = new Scene(text, options);
+            Inventory inventory = new Inventory(10);
+            inventory.addItem(new Item("Item1", "Typ1", "Extra1"));
+            inventory.addItem(new Item("Item2", "Typ2", "Extra2"));
+
+            Scene scene = new Scene(text, options, inventory);
 
             return scene;
         }
